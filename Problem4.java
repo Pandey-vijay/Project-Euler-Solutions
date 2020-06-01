@@ -1,6 +1,6 @@
-public class Program4 {
+public class Problem4 {
     public static void main(String[] args) {
-        Program4 program5 = new Program4();
+        Problem4 program5 = new Problem4();
         int lower =1;
         int higher = 99999;
         int out = 0;
