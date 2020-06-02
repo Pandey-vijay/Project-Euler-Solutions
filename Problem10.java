@@ -26,7 +26,6 @@ public class Problem10 {
     }
 
     synchronized public void calSum(long no){
-        System.out.println(sum+no);
         sum+=no;
     }
 
