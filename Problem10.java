@@ -2,7 +2,9 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class Problem10 {
+    long startTime = System.currentTimeMillis();
     long sum;
+    int count = 0;
     public static void main(String[] args) {
         Problem10 problem10 = new Problem10();
         Prime prime = new Prime(2,200000,1,problem10);
@@ -29,6 +31,13 @@ public class Problem10 {
         sum+=no;
     }
 
+    public void display(){
+        count++;
+        if(count == 9){
+            System.out.println(sum);
+            System.out.println((System.currentTimeMillis()-startTime)/60000);
+         }   
+    }
 }
 
 
@@ -62,6 +71,7 @@ class Prime extends Thread
              {  sum += i;}
         }
         problem10.calSum(sum);
+        problem10.display();
     }
     
 }
