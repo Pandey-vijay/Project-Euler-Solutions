@@ -7,7 +7,12 @@ public class Problem9 {
                     if(a+b+c == 1000){
                        if((a*a)+(b*b)==(c*c))
                         {
-                            System.out.println(a*b*c);
+                            int result = a*b*c;
+                            if(result != 0)
+                                {
+                                    System.out.println(result);
+                                    break;
+                                }
                         }            
                     }
                 }
