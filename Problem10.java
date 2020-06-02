@@ -1,6 +1,3 @@
-import java.math.BigDecimal;
-import java.math.BigInteger;
-
 public class Problem10 {
     long startTime = System.currentTimeMillis();
     long sum;
